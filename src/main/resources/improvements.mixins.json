@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.illia.improvements.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "ImprovementsModMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

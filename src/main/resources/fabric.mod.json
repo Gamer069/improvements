@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "improvements",
+  "version": "${version}",
+
+  "name": "Improvements Mod",
+  "description": "This mod makes minecraft better somehow, for example adding back 1.8 combat, and more, WIP",
+  "authors": [
+    "Illia Zhdanov"
+  ],
+
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.illia.improvements.ImprovementsMod"
+    ],
+    "fabric-datagen": [
+      "me.illia.improvements.datagen.DatagenEntrypoint"
+    ],
+    "client": [
+      "me.illia.improvements.ImprovementsModClient"
+    ],
+    "server": [
+      "me.illia.improvements.ImprovementsModServer"
+    ]
+  },
+  "mixins": [
+    "improvements.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
